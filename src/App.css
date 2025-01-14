@@ -1,0 +1,197 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding-top: 70px; /* Adjust this to match the height of your header */
+}
+
+/* Menu styles */
+.menu {
+  border-bottom: 1px solid gray;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Dark mode styles */
+.menu.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.menu.dark-mode .nav-link {
+  color: #fff;
+}
+
+.menu.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu.light-mode .nav-link {
+  color: #000;
+}
+
+.myavatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Add transitions for background color */
+body {
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+/* Home page specific styling */
+.home-container {
+  background-color: #f9f9f9; /* Light background to ensure contrast */
+  color: #333; /* Dark text for readability */
+  padding: 20px;
+}
+
+.home-container h1,
+.home-container p {
+  color: #333; /* Ensure the title and paragraphs are readable */
+}
+
+/* Image Group Section */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff; /* White background for cards */
+  color: #333; /* Dark text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to distinguish cards */
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Hover effect for cards */
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222; /* Dark footer background */
+  color: #fff; /* Light text for footer */
+}
+
+footer img {
+  border-radius: 50%;
+}
+
+/* Category Button styling */
+.category-button {
+  background-color: #ccd4e1; /* Light gray background for categories */
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #a0aec0; /* Slightly darker on hover */
+}
+
+/* Light mode adjustments */
+.light-mode .category-button {
+  background-color: #e2e8f0;
+  color: #1a202c;
+}
+
+.light-mode .category-button:hover {
+  background-color: #cbd5e0;
+}
+
+/* Dark mode adjustments */
+.dark-mode .category-button {
+  background-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark-mode .category-button:hover {
+  background-color: #2d3748;
+}
+
+/* Ensure better visibility of elements in dark mode */
+.dark-mode .home-container h1,
+.dark-mode .home-container p {
+  color: #fff;
+}
+
+/* Page Body Styles */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Make sure text inside sections is visible */
+section {
+  padding: 20px;
+}
+
+section h2, section p {
+  color: inherit; /* Ensures the text inherits the color from its container */
+}
+
+/* Specific home page styling */
+.home-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Title Section */
+.home-container h1 {
+  color: #333; /* Ensure it contrasts well with background */
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #6b7280; /* Default placeholder color */
+  opacity: 1; /* Ensure full opacity */
+}
+
+/* Light mode placeholder color */
+.light-mode ::placeholder {
+  color: #4a5568;
+}
+
+/* Dark mode placeholder color */
+.dark-mode ::placeholder {
+  color: #e2e8f0;
+}
+
+/* Add additional page-specific styles here */
