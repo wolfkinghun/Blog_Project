@@ -1,6 +1,6 @@
 /* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "tailwindcss";
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -75,8 +75,9 @@ body {
   background-color: #fff; /* White background for cards */
   color: #333; /* Dark text color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to distinguish cards */
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 10px;
+ 
   transition: transform 0.3s ease;
 }
 

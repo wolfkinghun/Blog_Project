@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Card({name,url}) {
   return (
-    <div className="position-relative m-3" style={{ width: "18rem", height: "15rem" }}>
+    <div className="position-relative m-3 rounded-xl" style={{ width: "18rem", height: "15rem" }}>
           <img
              src={url} 
              className="img-fluid rounded"
